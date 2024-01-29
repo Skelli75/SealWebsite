@@ -1,0 +1,124 @@
+nav {
+    background-color: rgb(64, 57, 57);
+
+    padding: 2%;
+    padding-bottom: 0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+}
+
+body {
+    margin: 0px;
+    background-color: rgb(88, 87, 87);
+    
+    margin-left: 5px;
+}
+
+main {
+    background-color: bisque;
+    background-image: url('Content/paperTexture.png');
+}
+
+header {
+    margin-bottom: 0px;
+}
+
+h1 {
+    margin-top: 0;
+    padding-top: 4%;
+    font-style: oblique;
+    font-size: xxx-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+p {
+    font-size: x-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.NavButton {
+    margin-right: 5px;
+    background-color: bisque;
+    background-image: url('Content/paperTexture.png');
+    
+    font-size: x-large;
+    border: 10px;
+    padding: 20px;
+    margin-bottom: 0px;
+}
+
+.SealCam {
+    display: grid;
+    grid-template-areas: 
+    "Title"
+    "Stream";
+
+    justify-content: center;
+}
+
+#SealCamTitle {
+    grid-area: "Title";
+}
+
+#SealCamStream {
+    grid-area: "Stream";
+}
+
+.page {
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.img-cont-center {
+    display: flex;
+    justify-content: center;
+}
+
+.img-cont {
+    display: grid;
+    grid-template-areas: "first" "second";
+    max-height: min-content;
+}
+
+.seal1 {
+    grid-area: "first";
+    width: 45%;
+}
+
+.seal2 {
+    grid-area: "second";
+    width: 45%;
+}
+
+.icebergHolder {
+    display: flex;
+}
+
+.iceberg {
+    width:100%;
+}
+
+#SecondP {
+    display: flex;
+    margin-top: 0;
+
+}
+
+#AdoptButton {
+    padding: 1%; 
+    font-size: x-large;
+
+}
+
+#AdoptPage {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.iceberg {
+    background-image: url('Content/iceberg.jpg');
+    padding: 20px;
+}
