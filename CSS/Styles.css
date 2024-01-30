@@ -9,6 +9,14 @@ nav {
     justify-content: baseline;
 }
 
+.uppNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: top;
+    justify-content: right;
+    width: 50%;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -23,7 +31,7 @@ body {
 
 main {
     background-color: bisque;
-    background-image: url('../Content/paperTexture.png');
+    background-image: url('../Resources/paperTexture.png');
 }
 
 header {
@@ -46,7 +54,7 @@ p {
 .NavButton {
     margin-right: 5px;
     background-color: bisque;
-    background-image: url('../Content/paperTexture.png');
+    background-image: url('../Resources/paperTexture.png');
     
     font-size: x-large;
     border: 10px;
@@ -124,6 +132,6 @@ p {
 }
 
 .iceberg {
-    background-image: url('../Content/iceberg.jpg');
+    background-image: url('../Resources/iceberg.jpg');
     padding: 20px;
 }
