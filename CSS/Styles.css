@@ -1,146 +1,151 @@
-nav {
-    background-color: rgb(64, 57, 57);
-
-    padding: 2%;
-    padding-bottom: 0px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: baseline;
-    width:50%;
-}
-
-.upperNav {
-    background-color: rgb(64, 57, 57);
-
-    display: flex;
-    flex-direction: row;
-    justify-content: top;
-    justify-content: right;
-    width: 50%;
-    padding-top: 0px;
-    margin: 0px;
-}
-
-header {
-    display: flex;
-    flex-direction: row;
-    max-height: 100px;
-}
-
 body {
     margin: 0px;
-    background-color: rgb(88, 87, 87);
-    
-    margin-left: 5px;
+    background-color: black;
+    text-align: center;
 }
 
-main {
-    background-color: bisque;
-    background-image: url('../Resources/paperTexture.png');
-    border-radius: 1%;
-    
-}
-
-header {
-    margin-bottom: 0px;
-}
-
-h1 {
-    margin-top: 0;
-    padding-top: 4%;
-    font-style: oblique;
-    font-size: xxx-large;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-p {
-    font-size: x-large;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-.NavButton {
-    margin-right: 5px;
-    background-color: bisque;
-    background-image: url('../Resources/paperTexture.png');
-    
-    font-size: x-large;
-    border: 10px;
-    padding: 20px;
-    margin-bottom: 0px;
-}
-
-.SealCam {
-    display: grid;
-    grid-template-areas: 
-    "Title"
-    "Stream";
-
-    justify-content: center;
-}
-
-#SealCamTitle {
-    grid-area: "Title";
-}
-
-#SealCamStream {
-    grid-area: "Stream";
-}
-
-.page {
-    margin-left: 15%;
-    margin-right: 15%;
-}
-
-.img {
-    display: flex;
-    min-width: 100%;
-    height: auto;
+p,h,div {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .img-cont {
-    display: grid;
-    grid-template-areas: "first" "second";
-    max-height: min-content;
-}
-
-.seal1 {
-    grid-area: "first";
-    width: 45%;
-}
-
-.seal2 {
-    grid-area: "second";
-    width: 45%;
-}
-
-.icebergHolder {
     display: flex;
+    justify-content: center;
 }
 
-.iceberg {
+img {
+    width: 100%;
+    height: auto; 
+}
+
+header {
+    display: flex;
+    background-color: white;
     width:100%;
 }
 
-#SecondP {
+.logo-name { 
+    background-color: white; /* Denna ligger inte i mitten vertikalt*/
     display: flex;
-    margin-top: 0;
-
+    justify-content: left;
+    width: 50%;
+    padding:1%;
+    margin-left: 3%;
 }
 
-#AdoptButton {
-    padding: 1%; 
-    font-size: x-large;
-
+.logo {
+    height: 60px;
 }
 
-#AdoptPage {
+.name {
+    padding-left: 20px;
+}
+
+.patreon-menu {
+    background-color: white;
+    display: flex;
+    justify-content: right;
+    width: 50%;
+    padding:2px;
+    margin-right:8%;
+}
+
+.patreon {
+    background-color: black;
+    padding:5%;
+    border-radius: 6%;
+}
+
+.menu {
+    background-color: white;
+    padding:5%;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+ 
+.title {
+    text-align: center;
+    font-size: 6pc; 
+}
+
+.fact-text {
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+#firstpageThumbnails {
+    margin: auto;
+    display: grid;
+    grid-template-areas: 
+    "big-news big-news"
+    "small-news1 small-news2";
+    background-color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#TN1 {
+    grid-area: big-news;
+    
+}
+
+#TN2 {
+    grid-area: small-news1;
+}
+
+#TN3 {
+    grid-area: small-news2;
+}
+
+.thumbnail {
+    padding: 1%;
+    background-color: rgb(224, 224, 224);
+    margin: 1%;
+}
+
+.liveStream {
     display: flex;
     justify-content: center;
-    flex-direction: column;
+    position: relative;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 2%;
+    margin-bottom: 2%;
 }
 
-.iceberg {
-    background-image: url('../Resources/iceberg.jpg');
-    padding: 20px;
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3pc;
 }
+
+@media only screen and (max-width: 500px) {
+    .overlay-text{
+        font-size: 1.5pc;
+    }
+    
+}
+
+footer {
+    display: flex;
+}
+
+.sources-staff {
+    display: flex;
+    flex-direction: row;
+}
+
+.sources, .staff {
+    display: flex;
+    flex-direction: column;
+    text-wrap: nowrap;
+    width: fit-content;
+    text-align: left;
+    margin-right: 50%;
+}
+

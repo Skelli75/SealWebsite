@@ -10,35 +10,74 @@
 </head>
 
 <header>
-    <nav>
-        <form action="index.html"><button class="NavButton" onclick="">Hem</button></form>
-        <form action="HTML/Fakta.html"><button class="NavButton" style="background-color: rgb(163, 137, 104);" onclick="">Fakta</button></form>
-        <form action="HTML/Adoptera.html"><button class="NavButton" style="background-color: rgb(163, 137, 104);" onclick="">Adoptera</button></form>
-    </nav>
-    <nav class="upperNav">
-        <div class="img">
-            <img src="Resources/CheekySeal.jpg" class="">
+    <div class="logo-name"> 
+        <div class="img-cont">
+            <img class="logo" src="Resources/Logo.png" alt="">
         </div>
-        <p style="background-color: lightblue;"> hello </p>
-        
-    </nav>
+        <p class="name"> Marine Life <p>
+    </div>
+    <div class="patreon-menu">
+        <a class="patreon" style="color:white; text-decoration: none;" href="https://patreon.com/Lala154?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink"><p  style="color: white;">Patreon</p></a>
+        <p class="menu">Meny</p>
+    </div>
 </header>
 
-<main>
-    <div class="page">
-        <h1 id="WelcomeTitle" class="title">Welcome!</h1>
-        <p>Welcome to "SealWorld Explorer," your premier online destination for a deep dive into the fascinating world of seals. Here at SealWorld Explorer, we are dedicated to providing you with a comprehensive and factual exploration of these incredible marine mammals. From their diverse species to their unique behaviors, habitats, and conservation efforts, our website is your go-to source for all things related to seals.</p>
-        <div class="image-cont">
-            <img src="Resources/sealres1.png" class="seal1">
-            <img src="Resources/sealres2.png" class="seal2">
+
+<body>
+    <div id="content" >
+        <div class="firstPageTitle">
+            <h class="title" style="color: white;">Sälar</h>
+            <p class="fact-text" style="color: white;">Sälar, eller pinnipeder, utgör en fascinerande grupp marina däggdjur som har anpassat sig för ett liv både i vattnet och på land. Denna mångfaldiga familj omfattar arter som lever i såväl kalla polarvatten som vid varmare kustlinjer runt om i världen. Med sina karakteristiska lekfulla beteenden och distinkta fysiska drag, har sälar lockat sig själva till forskare och naturälskare.</p>
+            <hr width="100" size="5" color="white">
+        </div>
+        <div id="firstpageThumbnails">
+            <div class="thumbnail" id="TN1">
+                <img src="Resources/cheekySeal.jpg" alt="">
+                <p>Sälar i det vilda</p>
+            </div>
+            <div class="thumbnail" id="TN2">
+                <img src="Resources/fatty.png" alt="">
+                <p>Adpotera en säl!</p>
+            </div>
+            <div class="thumbnail" id="TN3">
+                <img src="Resources/sealres1.png" alt="">
+                <p>Är sälar de nya vakthundarna</p>
+            </div>
+        </div>
+    
+
+        <div class="liveStream">
+            <img style="opacity: 30%;" src="Resources/stream.gif" alt=""> <!-- when hover full opacity-->
+            <div class="overlay-text" style="color: white;"><a style="color: white; text-decoration: none;" href="https://www.youtube.com/watch?v=wF_ytZyrW3w">Se sälar i det vilda!</a></div>
         </div>
     </div>
-    <div class="SealCam">
-        <h1 style="color: red;" id="SealCamTitle">SEALS IN ACTION</h1>
-        <iframe id="SealCamStream" width="1015" height="571" src="https://www.youtube.com/embed/wF_ytZyrW3w" title="Gray Seal Pupping Cam powered by EXPLORE.ORG" frameborder="50" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-</main>
 
-<h2>"Busiga sälar blir dömda till sälkammaren"</h2>
+    <hr size="5" color=#242424>
+</body>
+
+<footer>
+    <div class="logo-name" style="background-color: black; width: 30%;"> 
+        <div class="img-cont">
+            <img class="logo" src="Resources/Logo.png" alt="">
+        </div>
+        <p class="name" style="color: white;"> Marine Life <p>
+    </div>
+    <div class="sources-staff">
+        <div class="sources" style="color: white;">
+            <p style="color: white; font-weight: bolder; font-size: 1.2pc;">STAFF</p>
+            <p style="color: white;">Alfred</p>
+            <p style="color: white;">Linnea</p>
+        </div>
+        <div class="sources" style="color: white;">
+            <p style="color: white; font-weight: bolder; font-size: 1.2pc;">SOURCES</p>
+            <p style="color: white; ">Coolsealfacts.org</p>
+            <p style="color: white;">Hampus</p>
+        </div>
+    </div>
+</footer>
+
+
+
+<h2 style="color: aliceblue;">"Busiga sälar blir dömda till sälkammaren" - Hamp </h2>
 
 </html>
