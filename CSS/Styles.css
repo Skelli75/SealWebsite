@@ -1,11 +1,17 @@
 body {
     margin: 0px;
     background-color: black;
-    text-align: center;
 }
 
-p,h,div {
+p,h1,div {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.fact-title {
+    color:white;
+    padding-left: 15%;
+    padding-right: 15%;
+    justify-content: left;
 }
 
 .img-cont {
@@ -66,21 +72,25 @@ header {
     flex-direction: column;
     margin-top: 5%;
     justify-content: center;
+    align-items: center;
 }
  
 .title {
+    color: white;
     text-align: center;
     font-size: 6pc; 
+    
 }
 
 .fact-text {
     padding-left: 15%;
     padding-right: 15%;
+    color: white; 
+    text-align: center;
 }
 
-#firstpageThumbnails {
-    display: flex;
-    flex-direction: column;
+#indexThumbnails {
+    display: grid;
     grid-template-areas: 
     "top top"
     "left right";
@@ -89,17 +99,14 @@ header {
 
 #top {
     grid: top;
-    display: flex;
-    justify-content: center;
 }
 
-#bottom {
- display: flex;
- flex-direction: row;
+#left {
+    grid-area: left;
 }
 
-#small {
-    max-width: 400px;
+#right {
+    grid-area: right;
 }
 
 .thumbnail {
@@ -112,8 +119,15 @@ header {
 
 .TNtext {
     position: absolute;
-    bottom: 8px;
-    left: 16px;
+    bottom: 2%;
+    left: 5%;
+    color: white;
+    font-size: large;
+    text-shadow: 0 0 3px #000000;
+}
+
+.TNimg:hover {
+    opacity: 60%;
 }
 
 .liveStream {
@@ -185,4 +199,18 @@ footer {
 
 #RightBottom {
     grid-area: rightbottom;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.cont-img {
+    padding: 20px;
 }
