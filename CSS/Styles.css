@@ -65,6 +65,7 @@ header {
     display: flex;
     flex-direction: column;
     margin-top: 5%;
+    justify-content: center;
 }
  
 .title {
@@ -73,37 +74,46 @@ header {
 }
 
 .fact-text {
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 #firstpageThumbnails {
-    margin: auto;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     grid-template-areas: 
-    "big-news big-news"
-    "small-news1 small-news2";
-    background-color: rgb(0, 0, 0);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    "top top"
+    "left right";
+    width: 50%;
 }
 
-#TN1 {
-    grid-area: big-news;
-    
+#top {
+    grid: top;
+    display: flex;
+    justify-content: center;
 }
 
-#TN2 {
-    grid-area: small-news1;
+#bottom {
+ display: flex;
+ flex-direction: row;
 }
 
-#TN3 {
-    grid-area: small-news2;
+#small {
+    max-width: 400px;
 }
 
 .thumbnail {
     padding: 1%;
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(47, 109, 225);
     margin: 1%;
+    position: relative;
+    display: flex;
+}
+
+.TNtext {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
 }
 
 .liveStream {
@@ -114,6 +124,13 @@ header {
     padding-right: 20%;
     margin-top: 2%;
     margin-bottom: 2%;
+}
+
+.streamImg {
+    opacity: 30%;
+}
+.streamImg:hover {
+    opacity: 100%;
 }
 
 .overlay-text {
@@ -149,3 +166,23 @@ footer {
     margin-right: 50%;
 }
 
+#adopt-cont {
+    display: grid;
+    grid-template-areas: 
+    "left righttop"
+    "left rightbottom";
+    justify-content: center;
+    width: 50%;
+}
+
+#Leftrow {
+    grid-area: left;
+}
+
+#RightTop {
+    grid-area: righttop;
+}
+
+#RightBottom {
+    grid-area: rightbottom;
+}
