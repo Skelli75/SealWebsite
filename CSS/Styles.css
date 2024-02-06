@@ -144,11 +144,60 @@ header {
     font-size: 3pc;
 }
 
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .overlay-text{
         font-size: 1.5pc;
     }
+}
+
+@media screen and (min-width: 750px) {
+    #adopt-cont {
+        display: grid;
+        grid-template-areas: 
+        "left righttop"
+        "left rightbottom";
+        justify-content: center;
+        width: 50%;
+    }
     
+    #Leftrow {
+        grid-area: left;
+    }
+    
+    #RightTop {
+        grid-area: righttop;
+    }
+    
+    #RightBottom {
+        grid-area: rightbottom;
+    }
+
+    .adopt-container {
+        display: flex;
+        margin: 20%;
+    }
+
+    .adopt {
+        display: flex;
+        color: white;
+    }
+
+    .crustaceans {
+        display: flex; 
+        flex-direction: row; 
+        padding-left: 15%; 
+        padding-right: 15%;
+        
+    }
+}
+
+.crustaceans {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.adopt {
+    color: white;
 }
 
 footer {
@@ -167,27 +216,6 @@ footer {
     width: fit-content;
     text-align: left;
     margin-right: 50%;
-}
-
-#adopt-cont {
-    display: grid;
-    grid-template-areas: 
-    "left righttop"
-    "left rightbottom";
-    justify-content: center;
-    width: 50%;
-}
-
-#Leftrow {
-    grid-area: left;
-}
-
-#RightTop {
-    grid-area: righttop;
-}
-
-#RightBottom {
-    grid-area: rightbottom;
 }
 
 a {
@@ -252,10 +280,7 @@ button:hover {
     transform: translate(-60%);
 }
 
-.adopt-container {
-    display: flex;
-    margin: 20%;
-}
+
 
 .adopt-text {
     display: flex;
@@ -264,8 +289,5 @@ button:hover {
     font-size: 1pc;
 }
 
-.adopt {
-    display: flex;
-    color: white;
-}
+
 
